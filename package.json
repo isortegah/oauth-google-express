@@ -1,0 +1,25 @@
+{
+  "name": "oauth-google-express",
+  "version": "0.0.1",
+  "description": "Ejemplo simple de Oauth Google y Express ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isortegah/oauth-google-express.git"
+  },
+  "keywords": [
+    "OAUTH",
+    "GOOGLE",
+    "EXPRESS",
+    "NODEJS"
+  ],
+  "author": "Iván Sebastián Ortega Huixtlacatl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isortegah/oauth-google-express/issues"
+  },
+  "homepage": "https://github.com/isortegah/oauth-google-express#readme"
+}
