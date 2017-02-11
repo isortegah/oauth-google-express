@@ -9,4 +9,5 @@ OAUTH Simple Google y Express
 
 ## Pagina Inicial Login
 * Se requiere renderizar la pagina del login, por lo que utilisaremos `npm install --save ejs`.
-* Agregamos a la funcion router la instruccion `view engine` e indicamos la ruta donde se localizan las `views`.
+* Agregamos a la funcion router la instruccion `view engine` e indicamos la ruta donde se localizan las `views` [View code](https://github.com/isortegah/oauth-google-express/commit/3f5184d3c7f301aebbe32a62be2d3a6e979ac609).
+* Completamos la pagina de Login para que tenga una mejor apariencia, y agregamos la opci[on de Login con Google [View code]().
