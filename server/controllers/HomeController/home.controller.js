@@ -5,5 +5,5 @@
 'use strict'
 
 exports.getAuth = function( req, res ){
-    res.json({code:"resp"});
+    res.render('login.ejs');
 }
