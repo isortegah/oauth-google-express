@@ -16,10 +16,17 @@
     "EXPRESS",
     "NODEJS"
   ],
+  "engines": {
+    "node": ">=7.2.0",
+    "npm": ">=3.10.9"
+  },
   "author": "Iván Sebastián Ortega Huixtlacatl",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/isortegah/oauth-google-express/issues"
   },
-  "homepage": "https://github.com/isortegah/oauth-google-express#readme"
+  "homepage": "https://github.com/isortegah/oauth-google-express#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }

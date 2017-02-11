@@ -6,6 +6,8 @@
  var http    = require('http');
  var port    = process.env.PORT || 3000;
  
+ app = require('./config/routes')(app,express);
+
  var server = http.createServer(app);
  server.listen(port)
  console.log("\n//////////////////////////////////////////////");
