@@ -7,5 +7,14 @@ module.exports = function(app , express) {
 
     app.use('/', require('./../server/controllers/HomeController'));
     app.use('/auth/google',require('./../server/controllers/GoogleController'));
+
+    app.use( '/app' , isLoggedIn , express.static('app') );
     return app;
 }
+
+function isLoggedIn(req, res, next){
+     //return next();
+     if (req.isAuthenticated())
+        return next();
+     res.redirect('/');
+ }
