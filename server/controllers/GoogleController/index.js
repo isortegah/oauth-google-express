@@ -19,4 +19,23 @@
 
  }));
 
+ router.get( '/callback' , ( req , res , next ) => {
+     passport.authenticate( 'google' , {
+     scope : [
+        urlGApi + ".profile",
+        urlGApi + ".email"
+        ],
+        failureRedirect : '/'
+     } , ( err , user , info ) =>{
+        if ( controller.filtroOauth( err , user , info ) ) {
+            req.login( user , ( err ) => {
+                if( err ) { return next( err )}
+                return res.redirect( '/app' );
+            })
+        }else
+            return res.redirect( '/' );   
+     }
+     )(req, res, next);
+ });
+
  module.exports = router;
