@@ -6,10 +6,13 @@
  var http    = require('http');
  var port    = process.env.PORT || 3000;
  var passport = require('passport');
+ var session = require('express-session');
  
+ app.use(session({secret: "HkjuHFhkKH658JHgtredbmkhj/980NHMBFMN"}));
  app.use( passport.initialize() );
- 
- app = require('./config/routes')(app,express);
+ app.use(passport.session());
+
+ app = require('./config/routes')( app , express );
 
  var server = http.createServer(app);
  server.listen(port)
