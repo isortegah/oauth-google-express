@@ -8,7 +8,12 @@
  var passport = require('passport');
  var session = require('express-session');
  
- app.use(session({secret: "HkjuHFhkKH658JHgtredbmkhj/980NHMBFMN"}));
+ app.use(session({
+    secret: "HkjuHFhkKH658JHgtredbmkhj/980NHMBFMN", 
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: true }
+    }));
  app.use( passport.initialize() );
  app.use(passport.session());
 
